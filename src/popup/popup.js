@@ -25,8 +25,6 @@ async function show() {
     return;
   }
 
-  console.log('entry', entry[0], MESSAGES.found(entry[0]));
-
   if (entry.length === 0) {
     render(root, MESSAGES.notFound);
     return;

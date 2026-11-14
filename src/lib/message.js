@@ -21,4 +21,7 @@ export const MESSAGES = {
     title: "This page hasn't been scanned yet. 🔄",
     text: 'Refresh the page, then open FrameSpy again.',
   },
+
+  tooltipFound: (name) => `Spotted: ${name}`,
+  tooltipNotFound: 'No framework spotted',
 };

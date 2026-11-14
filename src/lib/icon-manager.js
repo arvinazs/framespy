@@ -10,7 +10,6 @@ export const LOGOS = {
 const ICON_SIZES = [16, 32, 48, 128];
 
 export function updateTabIcon(tabId, framework) {
-  console.log('framework', framework);
   const icon = LOGOS[framework] ?? 'none';
 
   const path = Object.fromEntries(
