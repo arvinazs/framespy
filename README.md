@@ -1,6 +1,5 @@
-Readme · MD
 <div align="center">
-# 🕵️ FrameSpy
+🕵️ FrameSpy
 
 **See which JavaScript framework a website uses, right on the toolbar icon.**
 
@@ -9,15 +8,16 @@ Readme · MD
 ![License](https://img.shields.io/badge/license-ISC-blue)
 
 </div>
----
 
 FrameSpy is a tiny Chrome extension for the curious. Open any website and the extension icon turns into the logo of the framework the page is built with. Click it for a short, friendly explanation.
 
 No setup, no accounts, and nothing ever leaves your browser.
 
-<!-- Add a screenshot or GIF here:
-<div align="center"><img src="docs/demo.gif" width="480" alt="FrameSpy demo" /></div>
--->
+<div align="center">
+  <img src="./src/docs/IMG_1.png" width="360" alt="FrameSpy toolbar icon" />
+  &nbsp;&nbsp;
+  <img src="./src/docs/IMG_2.png" width="360" alt="FrameSpy popup" />
+</div>
 
 ## ✨ Features
 
