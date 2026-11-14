@@ -1,0 +1,32 @@
+{
+  "name": "framespy",
+  "version": "1.0.0",
+  "description": "Shows which JavaScript framework a website uses",
+  "scripts": {
+    "dev": "parcel watch src/manifest.json --target webext-dev --no-hmr",
+    "build": "parcel build src/manifest.json --target webext-prod"
+  },
+  "keywords": [
+    "chrome-extension",
+    "framework-detector",
+    "devtools"
+  ],
+  "author": "Arvin Azs",
+  "license": "ISC",
+  "targets": {
+    "webext-dev": {
+      "distDir": "dist",
+      "sourceMap": {
+        "inline": true
+      }
+    },
+    "webext-prod": {
+      "distDir": "dist",
+      "sourceMap": false
+    }
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.16.4",
+    "parcel": "^2.16.4"
+  }
+}

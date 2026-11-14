@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "FrameSpy",
+    "description": "Shows which JavaScript framework a website uses",
+    "version": "1.0.0",
+    "icons": {
+        "16": "icons/none-16.png",
+        "32": "icons/none-32.png",
+        "48": "icons/none-48.png",
+        "128": "icons/none-128.png"
+    },
+    "action": {
+        "default_title": "Framework Detector",
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icons/none-16.png",
+            "32": "icons/none-32.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ]
+}
