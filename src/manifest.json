@@ -28,5 +28,15 @@
     "host_permissions": [
         "http://*/*",
         "https://*/*"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "icons/*.png"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
     ]
 }

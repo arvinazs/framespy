@@ -1,10 +1,11 @@
+Readme · MD
 <div align="center">
 # 🕵️ FrameSpy
 
 **See which JavaScript framework a website uses, right on the toolbar icon.**
 
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-4285F4?logo=googlechrome&logoColor=white)
-![No build step](https://img.shields.io/badge/build%20step-none-2ea44f)
+![Built with Parcel](https://img.shields.io/badge/built%20with-Parcel-21374b)
 ![License](https://img.shields.io/badge/license-ISC-blue)
 
 </div>
@@ -29,26 +30,36 @@ No setup, no accounts, and nothing ever leaves your browser.
 ## 🎯 Supported frameworks
 
 <div align="center">
-| | Framework |
-| :---: | --- |
-| ⚛️ | **React** |
-| 💚 | **Vue** |
-| 🅰️ | **Angular** |
-| 🔥 | **Svelte** |
-
+<table>
+  <tr>
+    <td align="center"><img src="src/icons/react-48.png" width="48" alt="React" /><br /><b>React</b></td>
+    <td align="center"><img src="src/icons/vue-48.png" width="48" alt="Vue" /><br /><b>Vue</b></td>
+    <td align="center"><img src="src/icons/angular-48.png" width="48" alt="Angular" /><br /><b>Angular</b></td>
+    <td align="center"><img src="src/icons/svelte-48.png" width="48" alt="Svelte" /><br /><b>Svelte</b></td>
+  </tr>
+</table>
 </div>
 If a page uses more than one, the first one found is shown on the icon.
 
 ## 🚀 Install
 
-FrameSpy isn't on the Chrome Web Store yet, so for now you load it manually. It takes about a minute.
+FrameSpy isn't on the Chrome Web Store yet, so for now you build it and load it manually. It takes a couple of minutes.
+
+You'll need [Node.js](https://nodejs.org) installed.
 
 1. Download or clone this repository.
-2. Open `chrome://extensions` in Chrome (or any Chromium browser).
-3. Turn on **Developer mode** in the top right.
-4. Click **Load unpacked** and choose the project folder.
-5. Click the puzzle icon in the toolbar and **pin** FrameSpy.
-   Now visit a site like [react.dev](https://react.dev) and watch the icon change.
+2. Install the dependencies and build the extension:
+
+```bash
+npm install
+npm run build
+```
+
+This creates a `dist` folder. That folder is the extension. 3. Open `chrome://extensions` in Chrome (or any Chromium browser). 4. Turn on **Developer mode** in the top right. 5. Click **Load unpacked** and choose the **`dist`** folder (not the project folder). 6. Click the puzzle icon in the toolbar and **pin** FrameSpy.
+
+Now open a React website and watch the icon change.
+
+> Chrome loads the built files in `dist`, so after changing anything in `src`, run `npm run build` again and press the reload button on the extension's card in `chrome://extensions`.
 
 ## 🔐 Privacy
 
